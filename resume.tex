@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{tabu}
+\usepackage{fontawesome}
+\usepackage{academicons}
+\usepackage{multirow}
+\usepackage{hyperref}
+
+\pagenumbering{gobble}
+
+%%% Macros with contact information %%%
+\newcommand{\address}{} %Currently set up to be 3 lines.
+\newcommand{\email}{}
+\newcommand{\phone}{}
+\newcommand{\website}{}
+\newcommand{\twitter}{}
+\newcommand{\linkedin}{}
+\newcommand{\github}{}
+\newcommand{\twitch}{}
+\newcommand{\user}{}
+\newcommand{\steam}{}
+% \newcommand{\orcid}{}
+
+%%% Keep the contact information in a separate file %%%
+
+\input{contactinfo}
+
+%%% Content
+
+\begin{document}
+{\noindent\huge{\textbf{Adam James Orr\\}}}
+
+\noindent
+\begin{tabular}{l l l}
+	\setlength{\tabcolsep}{1pt}
+	\multirow{3}{*}{\begin{tabular}{@{}ll@{}}
+		\multirow{3}{*}{\faicon{map-marker}} & \address{}
+	\end{tabular}} & \faicon{envelope-o} \email{} & \faicon{phone} \phone{} \\
+	& \faicon{link} \url{\website} & \faicon{twitter} \twitter{} \\
+	& \faicon{linkedin} \url{\linkedin} & \faicon{github} \url{\github} \\
+	\faicon{user} \user{} & \faicon{steam-square} \steam{} & \faicon{twitch} \url{\twitch}
+\end{tabular}
+
+\section*{\faicon{book} Education}
+
+foo
+
+
+\end{document}
+
+
+
